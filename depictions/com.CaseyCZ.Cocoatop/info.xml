@@ -1,0 +1,38 @@
+<package>
+	<id>com.CaseyCZ.Cocoatop</id>
+	<name>Cocoatop</name>
+	<version>2.1.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+      <maxiOS>13.0+</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+			<!--
+			for otherVersions, you can put either unsupported or unconfirmed
+			-->
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>mobilesubstrate</package>
+	</dependencies>
+	<shortDescription>Process viewer for iOS</shortDescription>
+	<descriptionlist>
+		<description>Process viewer for iOS</description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>Screenshot</description>
+			<image>cool.jpg</image>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		<change>Initial Release</change>
+	</changelog>
+	<links>
+		<link>
+			<name>GitHub Source</name>
+			<url>https://github.com/D0m0/d0m0.github.io</url>
+			<iconclass>fa fa-github</iconclass>
+		</link>
+	</links>
+</package>
