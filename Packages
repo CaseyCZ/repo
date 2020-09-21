@@ -30,13 +30,13 @@ Author: Reposi3 <reposithree@gmail.com>
 Depiction: https://CaseyCZ.github.io/repo/depictions/?p=com.supermamon.oldpackage
 Name: Old Package
 
-Package: ru.domo.cocoatop
+Package: Cocoatop_2.1.3
 Version: 2.1.3
 Architecture: iphoneos-arm
 Maintainer: AnonymousxiosdeV
 Installed-Size: 1344
 Depends: firmware (>= 13.0)
-Filename: ./debs/cocoatop_2.1.3.deb
+Filename: ./debs/Cocoatop_2.1.3.deb
 Size: 251270
 MD5sum: 4dcf90a247084edf5ceee0aef07b1a19
 SHA1: 68f0641492c86bdbaed39f78e2c5fa834fae8128
@@ -44,5 +44,5 @@ SHA256: 7b11d294b044982d4af93c100627ce23fece244460f3eff9344b2c1b226f6fd3
 Section: Utilities
 Description: iOS13+ GUI for monitoring processes
 Author: Domo
-Depiction: https://CaseyCZ.github.io/repo/depictions/?p=com.supermamon.Cocoatop
+Depiction: https://CaseyCZ.github.io/repo/depictions/?p=com.supermamon.Cocoatop_2.1.3
 Name: CocoaTop iOS13
