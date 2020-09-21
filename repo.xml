@@ -1,6 +1,11 @@
 <repo>
 	<footerlinks>
 		<link>
+			<name>Home</name>
+			<url>https://caseycz.github.io/repo//</url>
+			<iconclass>fa fa-thumbs-up</iconclass>
+		</link>
+		<link>
 			<name>Follow me on Twitter</name>
 			<url>https://twitter.com/Searcasey</url>
 			<iconclass>fa fa-twitter</iconclass>
@@ -16,9 +21,9 @@
 			<iconclass>fa fa-reddit</iconclass>
 		</link>
 		<link>
-			<name>My cydia repositary site</name>
-			<url>https://caseycz.github.io/repo//</url>
-			<iconclass>fa fa-thumbs-up</iconclass>
+			<name>Github</name>
+			<url>https://github.com/CaseyCZ//</url>
+			<iconclass>fa fa-github-up</iconclass>
 		</link>
 	</footerlinks>
 </repo>
