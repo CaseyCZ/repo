@@ -11,6 +11,11 @@
 			<iconclass>fa fa-youtube</iconclass>
 		</link>
 		<link>
+			<name>/r/jailbreak</name>
+			<url>https://www.reddit.com/r/jailbreak</url>
+			<iconclass>fa fa-reddit</iconclass>
+		</link>
+		<link>
 			<name>My cydia repositary site</name>
 			<url>https://caseycz.github.io/repo//</url>
 			<iconclass>fa fa-thumbs-up</iconclass>
