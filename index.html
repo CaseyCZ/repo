@@ -12,9 +12,22 @@
     /* Přidejte další CSS úpravy zde */
     .header {
       background-image: linear-gradient(to right, #667eea, #764ba2);
+      transition: background-color 0.3s ease;
     }
-    .header h1 {
-      font-size: 3rem;
+    .header:hover {
+      background-color: #ff9900;
+    }
+    .social-icon {
+      transition: color 0.3s ease;
+    }
+    .social-icon:hover {
+      color: #ff9900;
+    }
+    .card {
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -28,10 +41,10 @@
   
   <div class="container text-center my-5">
     <p class="mb-0">
-      <a href="https://twitter.com/Searcasey" target="_blank" class="mr-3"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.youtube.com/channel/UCTT4ob7-2lkjdQf3yuqrjDw" target="_blank" class="mr-3"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.reddit.com/user/CaseyCZ" target="_blank" class="mr-3"><i class="fab fa-reddit"></i></a>
-      <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/Searcasey" target="_blank" class="mr-3 social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCTT4ob7-2lkjdQf3yuqrjDw" target="_blank" class="mr-3 social-icon"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.reddit.com/user/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-reddit"></i></a>
+      <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-github"></i></a>
     </p>
   </div>
   
@@ -48,6 +61,48 @@
         </div>
       </div>
       <div class="card">
+        <div class="card-header">
+          Old Package
+        </div>
+        <div class="card-body">
+          <p class="card-text">This is a sample package with lots of information.</p>
+          <a href="depictions/?p=com.supermamon.oldpackage" class="btn btn-xs btn-primary">More info</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          New Package
+        </div>
+        <div class="card-body">
+          <p class="card-text">This is a sample package with lots of information.</p>
+          <a href="depictions/?p=com.supermamon.newpackage" class="btn btn-xs btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="card">
+        <div class="card-header">
+          Old Package
+        </div>
+        <div class="card-body">
+          <p class="card-text">This is a sample package with lots of information.</p>
+          <a href="depictions/?p=com.supermamon.oldpackage" class="btn btn-xs btn-primary">More info</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          New Package
+        </div>
+        <div class="card-body">
+          <p class="card-text">This is a sample package with lots of information.</p>
+          <a href="depictions/?p=com.supermamon.newpackage" class="btn btn-xs btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="card">
         <div class="card-header">
           Old Package
         </div>
