@@ -13,12 +13,10 @@
 }
 
 /* Denní režim */
-.body {
+body:not(.night-mode) .card {
+  background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
   margin: 1em;
-  background-color: white; /* Bílé pozadí v denním režimu */
-  color: black; /* Černá barva textu v denním režimu */
 }
-
 /* Noční režim */
 .night-mode .body {
   margin: 1em;
