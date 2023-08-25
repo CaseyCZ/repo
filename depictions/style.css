@@ -1,8 +1,8 @@
 .moon {
     content: "\f186"; /* Kód ikony pro měsíc (Font Awesome) */
   color: #0000FF; /* Barva ikony měsíce */
-  /* Styly pro ikonu měsíce */
-}.nightModeButton {
+}
+.nightModeButton {
   margin-top: 10px;
 }
 .sunMoonIcon {
