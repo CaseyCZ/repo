@@ -10,8 +10,92 @@
   color: #ff9900;
 }
 .night-mode {
-  background-color: #1a1a1a; /* Barva pozadí pro noční režim */
-  color: #fff; /* Barva textu pro noční režim */
+  background-color: #f3f6f4; /* Barva pozadí pro noční režim */
+  color: ##16e138; /* Barva textu pro noční režim */
+}
+body {
+    margin: 1em;
+}
+.card {
+    margin-bottom: 1em;
+}
+.thumbnail {
+    margin-bottom: 2em;;
+}
+.list-group {
+    margin-bottom: 2em;
+}
+.disable-hover {
+    pointer-events: none;
+}
+.link-item {
+    list-style-type: none;
+    padding: 17px 15px;
+    display: block;
+    color: #4f89bb !important;
+    text-align: left;
+}
+.link-item:hover {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+.logo-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* Další stylová pravidla */
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
+    background-color: #fff;
+}
+
+html.can-touch .link-item:active{ /* disable hover effect when input is touch */
+    background-color: #f5f5f5;
+}
+
+.fa {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1f1f1f;
+        color: white;
+    }
+
+    .card-header {
+        background-color: #2f2f2f;
+    }
+    .card-body {
+        background-color: #1f1f1f;
+    }
+    .jumbotron {
+        background-color: #2f2f2f;
+    }
+
+    .list-group-item {
+        background-color: #1f1f1f;
+        border-color:  #2f2f2f;;
+    }
+
+    html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
+        background-color: #1f1f1f;
+    }
+    
+    html.can-touch .link-item:active{ /* disable hover effect when input is touch */
+        background-color: #1f1f1f;
+    }
+
+}
