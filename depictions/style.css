@@ -1,7 +1,6 @@
-/* Barva ikony měsíce */
-.moon {
-  color: green; /* Barva ikony měsíce v nočním režimu */
-}
+.fa-sun {
+    color: #ff9900; /* Žlutá barva pro ikonu slunce */
+  }
 /* Barva ikony v nočním režimu */
 .night-mode #sunMoonIcon {
   color: red; /* Barva ikony slunce v nočním režimu */
