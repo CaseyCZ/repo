@@ -23,6 +23,13 @@
     .social-icon:hover {
       color: #ff9900;
     }
+    body:not(.night-mode) .card {
+  background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
+}
+/* Styly pro černé pozadí .card-body v nočním režimu */
+body.night-mode .card-body {
+  background-color: #1f1f1f; /* Černé pozadí pro .card-body v nočním režimu */
+}
     .card {
       transition: transform 0.3s ease;
       background-color: #f0f0f0;
