@@ -34,8 +34,7 @@
 .social-icon {
   color: #ff9900;
 }
- body:not(.night-mode) .card {
-  background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
+ .body
   margin-bottom: 1em;
 }
 .thumbnail {
@@ -93,8 +92,14 @@ html.can-touch .link-item:active {
   .card-header {
     background-color: #2f2f2f;
   }
-  .card-body {
-    background-color: #1f1f1f;
+  body:not(.night-mode) .card {
+    background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
+  }
+
+  /* Styly pro černé pozadí .card-body v nočním režimu */
+  body.night-mode .card-body {
+    background-color: #1f1f1f; /* Černé pozadí pro .card-body v nočním režimu */
+
   }
   .jumbotron {
     background-color: #2f2f2f;
