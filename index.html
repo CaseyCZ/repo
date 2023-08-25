@@ -6,7 +6,7 @@
   <title>CaseyCZ</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="depictions/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     .header {
       background-image: linear-gradient(to right, #667eea, #764ba2);
@@ -67,7 +67,7 @@
       <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
     </div>
-<button id="nightModeButton" class="btn btn-light"><i class="fas fa-sun-moon" id="sunMoonIcon"></i></button>
+    <button id="nightModeButton" class="btn btn-light sunMoonIcon" onclick="toggleSunMoonIcon()"></button>
     <div class="tabs">
       <a href="index.html" class="tab">Domů</a>
       <a href="about.html" class="tab">O mně</a>
@@ -136,17 +136,25 @@
     </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   <!-- Přidání externího skriptu pro animace log na pozadí -->
   <script src="https://raw.githubusercontent.com/CaseyCZ/repo/master/script.js"></script>
-<script>
-  const nightModeButton = document.getElementById('nightModeButton');
-  const body = document.body;
+  <script>
+    const nightModeButton = document.getElementById('nightModeButton');
+    const body = document.body;
+    const sunMoonIcon = document.getElementById('sunMoonIcon');
+    let isNightMode = false;
 
-  nightModeButton.addEventListener('click', () => {
-    body.classList.toggle('night-mode');
-  });
-</script>
+    function toggleSunMoonIcon() {
+      isNightMode = !isNightMode;
+      body.classList.toggle('night-mode');
+      if (isNightMode) {
+        sunMoonIcon.classList.add('moon');
+      } else {
+        sunMoonIcon.classList.remove('moon');
+      }
+    }
+  </script>
 </body>
 </html>
