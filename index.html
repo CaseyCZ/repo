@@ -25,23 +25,6 @@
     .social-icon:hover {
       color: #ff9900;
     }
-    .card {
-      transition: transform 0.3s ease;
-      background-color: #f0f0f0; /* Barva pozadí karet */
-      border: 1px solid #ddd; /* Rámeček kolem karet */
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card .card-title {
-      color: #764ba2; /* Barva nadpisu karet */
-    }
-    .tabs {
-      display: flex;
-      justify-content: center;
-      background-color: #;
-      padding: 10px;
-    }
     .tab {
       padding: 10px 20px;
       margin: 0 10px;
@@ -49,10 +32,23 @@
       border-radius: 5px;
       text-decoration: none;
       color: #333;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.3s; /* Přidáme efekt na transformaci */
     }
     .tab:hover {
       background-color: #aaa;
+      transform: scale(1.05);
+    }
+    .card {
+      transition: transform 0.3s ease;
+      background-color: #f0f0f0; /* Barva pozadí karet */
+      border: 1px solid #ddd; /* Rámeček kolem karet */
+      margin-bottom: 20px; /* Oddělení karet */
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card .card-title {
+      color: #764ba2; /* Barva nadpisu karet */
     }
   </style>
 </head>
@@ -61,21 +57,19 @@
     <div class="container">
       <h1 class="text-white">Lukáš Kysela</h1>
       <p class="text-white">Vítejte na mé stránce</p>
-
       <a href="https://twitter.com/Searcasey" target="_blank" class="mr-3 social-icon"><i class="fab fa-twitter"></i></a>
       <a href="https://www.youtube.com/channel/UCTT4ob7-2lkjdQf3yuqrjDw" target="_blank" class="mr-3 social-icon"><i class="fab fa-youtube"></i></a>
       <a href="https://www.reddit.com/user/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-reddit"></i></a>
       <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-github"></i></a>
       <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
-</p>
+    </div>
     <div class="tabs">
       <a href="index.html" class="tab">Domů</a>
       <a href="about.html" class="tab">O mně</a>
       <a href="portfolio.html" class="tab">Portfolio</a>
       <a href="contact.html" class="tab">Kontakt</a>
     </div>
-    
   </header>
 
   <div class="container text-center my-5">
