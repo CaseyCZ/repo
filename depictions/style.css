@@ -1,8 +1,19 @@
-    .moon {
+/* Denní režim */
+body {
+  background-color: white; /* Bílé pozadí v denním režimu */
+  color: black; /* Černá barva textu v denním režimu */
+}
+
+/* Noční režim */
+.night-mode body {
+  background-color: black; /* Černé pozadí v nočním režimu */
+  color: white; /* Bílá barva textu v nočním režimu */
+}
+.moon {
       color: green; /* Barva ikony měsíce v nočním režimu */
     }
     .night-mode #sunMoonIcon {
-      color: green; /* Barva ikony měsíce v nočním režimu */
+      color: red; /* Barva ikony měsíce v nočním režimu */
     }
 .sunMoonIcon {
   margin-top: 10px;
