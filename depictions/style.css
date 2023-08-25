@@ -14,18 +14,6 @@
 .social-icon {
   color: #ff9900;
 }
-.night-mode #sunMoonIcon:before {
-  content: "\f185"; /* Kód ikony pro slunce (Font Awesome) */
-  color: #DC143C; /* Barva ikony slunce */
-}
-.sunMoonIcon.moon:before {
-  content: "\f186"; /* Kód ikony pro měsíc (Font Awesome) */
-  color: #0000FF; /* Barva ikony měsíce */
-}
-.night-mode {
-  background-color: #f3f6f4; /* Barva pozadí pro noční režim */
-  color: ##16e138; /* Barva textu pro noční režim */
-}
 body {
     margin: 1em;
 }
