@@ -24,6 +24,21 @@ body {
     border: 1px solid #ddd;
     background-color: #f5f5f5;
 }
+.logo-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
 
 html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
     background-color: #fff;
