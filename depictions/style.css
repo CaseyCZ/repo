@@ -10,8 +10,8 @@
   color: #ff9900;
 }
 .night-mode {
-  background-color: #1a1a1a; /* Barva pozadí pro noční režim */
-  color: #fff; /* Barva textu pro noční režim */
+  background-color: #f3f6f4; /* Barva pozadí pro noční režim */
+  color: ##16e138; /* Barva textu pro noční režim */
 }
 body {
     margin: 1em;
