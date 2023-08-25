@@ -12,12 +12,10 @@
   content: "\f185"; /* Kód ikony pro slunce (Font Awesome) */
   color: #ffcc00; /* Barva ikony slunce */
 }
-
-#sunMoonIcon.moon:before {
+.sunMoonIcon.moon:before {
   content: "\f186"; /* Kód ikony pro měsíc (Font Awesome) */
   color: #999; /* Barva ikony měsíce */
 }
-
 .night-mode {
   background-color: #f3f6f4; /* Barva pozadí pro noční režim */
   color: ##16e138; /* Barva textu pro noční režim */
