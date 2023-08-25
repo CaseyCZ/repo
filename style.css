@@ -1,4 +1,6 @@
-/* Příklad stylových pravidel */
+#nightModeButton {
+  margin-top: 10px;
+}/* Příklad stylových pravidel */
 .header {
   background-color: #667eea;
   color: white;
