@@ -2,11 +2,18 @@
 const nightModeButton = document.getElementById('nightModeButton');
 const body = document.body;
 const sunMoonIcon = document.getElementById('sunMoonIcon');
+let isNightMode = false;
 
-nightModeButton.addEventListener('click', () => {
+nightModeButton.addEventListener('click', toggleSunMoonIcon);
+
+function toggleSunMoonIcon() {
+  isNightMode = !isNightMode;
   body.classList.toggle('night-mode');
-  sunMoonIcon.classList.toggle('fa-sun'); // Přepínání ikony slunce/měsíce
-  sunMoonIcon.classList.toggle('fa-moon');
-});
+  if (isNightMode) {
+    sunMoonIcon.classList.add('moon');
+  } else {
+    sunMoonIcon.classList.remove('moon');
+  }
+}
 
   </script>
