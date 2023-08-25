@@ -75,7 +75,9 @@
       <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
     </div>
-<button id="nightModeButton" class="btn btn-light sunMoonIcon" onclick="toggleNightMode()"><i class="fas fa-sun"></i></button>
+<button id="nightModeButton" class="btn btn-light sunMoonIcon nightModeButton" onclick="toggleNightMode()">
+  <i id="sunMoonIcon" class="fas fa-sun"></i>
+</button>
     <div class="tabs">
       <a href="index.html" class="tab">Domů</a>
       <a href="about.html" class="tab">O mně</a>
@@ -145,18 +147,20 @@
   </div>
  <script>
     const nightModeButton = document.getElementById('nightModeButton');
-    const body = document.body;
+    const sunMoonIcon = document.getElementById('sunMoonIcon');
     let isNightMode = false;
 
     function toggleNightMode() {
       isNightMode = !isNightMode;
-      body.classList.toggle('night-mode');
+      document.body.classList.toggle('night-mode');
       if (isNightMode) {
-        nightModeButton.innerHTML = '<i class="fas fa-moon"></i>';
+        sunMoonIcon.classList.remove('fa-sun');
+        sunMoonIcon.classList.add('fa-moon');
       } else {
-        nightModeButton.innerHTML = '<i class="fas fa-sun"></i>';
+        sunMoonIcon.classList.remove('fa-moon');
+        sunMoonIcon.classList.add('fa-sun');
       }
     }
-  </script>
+</script>
 </body>
 </html>
