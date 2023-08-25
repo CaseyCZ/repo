@@ -1,4 +1,7 @@
-/* Změna názvu třídy z .nightModeButton na .sunMoonIcon */
+/* Přidejte třídu moon pro ikonu měsíce */
+.moon {
+  color: green; /* Barva ikony měsíce v nočním režimu */
+}/* Změna názvu třídy z .nightModeButton na .sunMoonIcon */
 .sunMoonIcon {
   margin-top: 10px;
   font-size: 24px;
