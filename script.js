@@ -1,4 +1,7 @@
 <script>
+    #nightModeButton {
+  margin-top: 10px;
+}
     const appleLogo = document.getElementById("apple-logo");
     const microsoftLogo = document.getElementById("microsoft-logo");
 
