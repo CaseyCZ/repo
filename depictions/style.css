@@ -34,7 +34,8 @@
 .social-icon {
   color: #ff9900;
 }
-.card {
+ body:not(.night-mode) .card {
+  background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
   margin-bottom: 1em;
 }
 .thumbnail {
