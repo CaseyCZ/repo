@@ -1,7 +1,6 @@
-.nightModeButton {
-  margin-top: 10px;
-}
+/* Změna názvu třídy z .nightModeButton na .sunMoonIcon */
 .sunMoonIcon {
+  margin-top: 10px;
   font-size: 24px;
   transition: color 0.3s ease;
 }
