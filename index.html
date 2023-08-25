@@ -139,5 +139,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   <!-- Přidání externího skriptu pro animace log na pozadí -->
   <script src="https://github.com/CaseyCZ/repo/blob/master/script.js"></script> <!-- Nahraď cestu k tvému externímu skriptu -->
+  <script>
+  const nightModeButton = document.getElementById('nightModeButton');
+  const body = document.body;
+
+  nightModeButton.addEventListener('click', () => {
+    body.classList.toggle('night-mode');
+  });
+</script>
 </body>
 </html>
