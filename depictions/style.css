@@ -14,14 +14,15 @@
 
 /* Denní režim */
 body:not(.night-mode) .card {
-  background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
+  background-color: black; /* Bílé pozadí pro karty pouze v denním režimu */
+  color: white; /* Bílá barva textu v nočním režimu */
   margin: 1em;
 }
 /* Noční režim */
 .night-mode .body {
   margin: 1em;
-  background-color: black; /* Černé pozadí v nočním režimu */
-  color: white; /* Bílá barva textu v nočním režimu */
+  background-color: white; /* Černé pozadí v nočním režimu */
+  color: black; /* Bílá barva textu v nočním režimu */
 }
 
 /* Zbytek vašeho CSS kódu... */
