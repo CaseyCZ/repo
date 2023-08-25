@@ -5,13 +5,12 @@
   background-color: #667eea;
   color: white;
 }
-
+.night-mode {
+  background-color: #000; /* Změňte na požadovanou barvu pozadí v nočním režimu */
+  color: #fff; /* Změňte na požadovanou barvu textu v nočním režimu */
+}
 .social-icon {
   color: #ff9900;
-}
-.night-mode {
-  background-color: #f3f6f4; /* Barva pozadí pro noční režim */
-  color: ##16e138; /* Barva textu pro noční režim */
 }
 body {
     margin: 1em;
