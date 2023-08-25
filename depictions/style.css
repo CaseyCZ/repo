@@ -10,11 +10,11 @@
 }
 .night-mode #sunMoonIcon:before {
   content: "\f185"; /* Kód ikony pro slunce (Font Awesome) */
-  color: #ffcc00; /* Barva ikony slunce */
+  color: #DC143C; /* Barva ikony slunce */
 }
 .sunMoonIcon.moon:before {
   content: "\f186"; /* Kód ikony pro měsíc (Font Awesome) */
-  color: #999; /* Barva ikony měsíce */
+  color: #0000FF; /* Barva ikony měsíce */
 }
 .night-mode {
   background-color: #f3f6f4; /* Barva pozadí pro noční režim */
