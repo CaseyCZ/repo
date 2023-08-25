@@ -146,14 +146,17 @@
     const sunMoonIcon = document.getElementById('sunMoonIcon');
     let isNightMode = false;
 
-    function toggleSunMoonIcon() {
-      isNightMode = !isNightMode;
-      body.classList.toggle('night-mode');
-      if (isNightMode) {
-        sunMoonIcon.classList.add('moon');
-      } else {
-        sunMoonIcon.classList.remove('moon');
-      }
+function toggleSunMoonIcon() {
+  isNightMode = !isNightMode;
+  body.classList.toggle('night-mode');
+  if (isNightMode) {
+    sunMoonIcon.classList.remove('fa-sun');
+    sunMoonIcon.classList.add('fa-moon');
+  } else {
+    sunMoonIcon.classList.remove('fa-moon');
+    sunMoonIcon.classList.add('fa-sun');
+  }
+}
     }
   </script>
 </body>
