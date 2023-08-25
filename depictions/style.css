@@ -1,6 +1,13 @@
 .nightModeButton {
   margin-top: 10px;
-}/* Příklad stylových pravidel */
+}
+.sunMoonIcon {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.night-mode #sunMoonIcon {
+  color: #999; /* Barva ikony v nočním režimu */
+}
 .header {
   background-color: #667eea;
   color: white;
