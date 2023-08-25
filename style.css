@@ -9,5 +9,9 @@
 .social-icon {
   color: #ff9900;
 }
+.night-mode {
+  background-color: #1a1a1a; /* Barva pozadí pro noční režim */
+  color: #fff; /* Barva textu pro noční režim */
+}
 
 /* Další stylová pravidla */
