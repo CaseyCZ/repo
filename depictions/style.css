@@ -5,10 +5,19 @@
   background-color: #667eea;
   color: white;
 }
-
 .social-icon {
   color: #ff9900;
 }
+.night-mode #sunMoonIcon:before {
+  content: "\f185"; /* Kód ikony pro slunce (Font Awesome) */
+  color: #ffcc00; /* Barva ikony slunce */
+}
+
+#sunMoonIcon.moon:before {
+  content: "\f186"; /* Kód ikony pro měsíc (Font Awesome) */
+  color: #999; /* Barva ikony měsíce */
+}
+
 .night-mode {
   background-color: #f3f6f4; /* Barva pozadí pro noční režim */
   color: ##16e138; /* Barva textu pro noční režim */
