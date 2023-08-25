@@ -1,7 +1,10 @@
 <script>
-    #nightModeButton {
-  margin-top: 10px;
-}
+ const nightModeButton = document.getElementById('nightModeButton');
+  const body = document.body;
+
+  nightModeButton.addEventListener('click', () => {
+    body.classList.toggle('night-mode');
+  });
     const appleLogo = document.getElementById("apple-logo");
     const microsoftLogo = document.getElementById("microsoft-logo");
 
