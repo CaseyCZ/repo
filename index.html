@@ -49,10 +49,11 @@
       border-radius: 5px;
       text-decoration: none;
       color: #333;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.3s; /* Přidejte animaci pro odkazy */
     }
     .tab:hover {
       background-color: #aaa;
+      transform: scale(1.05); /* Přidejte animaci pro odkazy */
     }
   </style>
 </head>
@@ -68,14 +69,13 @@
       <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-github"></i></a>
       <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
-</p>
+    </div>
     <div class="tabs">
       <a href="index.html" class="tab">Domů</a>
       <a href="about.html" class="tab">O mně</a>
       <a href="portfolio.html" class="tab">Portfolio</a>
       <a href="contact.html" class="tab">Kontakt</a>
     </div>
-    
   </header>
 
   <div class="container text-center my-5">
@@ -118,21 +118,21 @@
         <div class="card-body">
           <h5 class="card-title">Cocoatop1</h5>
           <p class="card-text">GUI Process Viewer for iOS 13+.</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary">More info</a>
+          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary tab">More info</a>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Cocoatop2</h5>
           <p class="card-text">GUI Process Viewer for iOS 13+.</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary">More info</a>
+          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary tab">More info</a>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Cocoatop3</h5>
           <p class="card-text">GUI Process Viewer for iOS 13+.</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary">More info</a>
+          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary tab">More info</a>
         </div>
       </div>
     </div>
