@@ -63,12 +63,8 @@
       <h1 class="text-white">Lukáš Kysela</h1>
       <p class="text-white">Vítejte na mé stránce</p>
 
-      <a href="https://twitter.com/Searcasey" target="_blank" class="mr-3 social-icon"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.youtube.com/channel/UCTT4ob7-2lkjdQf3yuqrjDw" target="_blank" class="mr-3 social-icon"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.reddit.com/user/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-reddit"></i></a>
-      <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
+      <!-- Ostatní ikony a odkazy -->
+
     </div>
     <div class="tabs">
       <a href="index.html" class="tab">Domů</a>
@@ -79,66 +75,47 @@
   </header>
 
   <div class="container text-center my-5">
-    <h2>Novinky</h2>
-    <div class="card-deck">
-      <div class="card">
-        <div class="card-header">
-          Cocoatop
-        </div>
-        <div class="card-body">
-          <p class="card-text">GUI Process Viewer for iOS 13+</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-xs btn-primary">More info</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          Old Package1
-        </div>
-        <div class="card-body">
-          <p class="card-text">This is a sample package with lots of information.</p>
-          <a href="depictions/?p=com.supermamon.oldpackage" class="btn btn-xs btn-primary">More info</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          New Package1
-        </div>
-        <div class="card-body">
-          <p class="card-text">This is a sample package with lots of information.</p>
-          <a href="depictions/?p=com.supermamon.newpackage" class="btn btn-xs btn-primary">More info</a>
-        </div>
-      </div>
-    </div>
+    <!-- Obsah stránky -->
+
   </div>
   
   <div class="container text-center my-5">
-    <h2>Featured Packages</h2>
-    <div class="card-deck">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Cocoatop1</h5>
-          <p class="card-text">GUI Process Viewer for iOS 13+.</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary tab">More info</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Cocoatop2</h5>
-          <p class="card-text">GUI Process Viewer for iOS 13+.</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary tab">More info</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Cocoatop3</h5>
-          <p class="card-text">GUI Process Viewer for iOS 13+.</p>
-          <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary tab">More info</a>
-        </div>
-      </div>
-    </div>
+    <!-- Obsah stránky -->
+
   </div>
   
+  <div class="logo-container" id="apple-logo"></div>
+  <div class="logo-container" id="microsoft-logo"></div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script>
+    const appleLogo = document.getElementById("apple-logo");
+    const microsoftLogo = document.getElementById("microsoft-logo");
+
+    const logos = [
+      "apple-logo.png",     // Nahraďte skutečným obrázkem loga Apple
+      "microsoft-logo.png"  // Nahraďte skutečným obrázkem loga Microsoft
+    ];
+
+    function getRandomLogo() {
+      return logos[Math.floor(Math.random() * logos.length)];
+    }
+
+    function showRandomLogo(logoElement) {
+      logoElement.style.backgroundImage = `url('${getRandomLogo()}')`;
+      logoElement.style.opacity = 1;
+
+      setTimeout(() => {
+        logoElement.style.opacity = 0;
+      }, 3000); // Zobrazení po dobu 3 sekund
+    }
+
+    // Zobrazování náhodných log
+    setInterval(() => {
+      showRandomLogo(appleLogo);
+      showRandomLogo(microsoftLogo);
+    }, 5000); // Zobrazení každých 5 sekund
+  </script>
 </body>
 </html>
