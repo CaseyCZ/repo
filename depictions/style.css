@@ -5,7 +5,8 @@
   transition: color 0.3s ease;
 }
 .night-mode #sunMoonIcon {
-  color: #999; /* Barva ikony v nočním režimu */
+  color: #008000; /* Zelená barva ikony v nočním režimu */
+}
 }
 .header {
   background-color: #667eea;
