@@ -1,3 +1,18 @@
+.nightModeButton {
+  margin-top: 10px;
+}/* Příklad stylových pravidel */
+.header {
+  background-color: #667eea;
+  color: white;
+}
+
+.social-icon {
+  color: #ff9900;
+}
+.night-mode {
+  background-color: #1a1a1a; /* Barva pozadí pro noční režim */
+  color: #fff; /* Barva textu pro noční režim */
+}
 body {
     margin: 1em;
 }
