@@ -52,6 +52,14 @@
     .tab:hover {
       background-color: #aaa;
     }
+    .night-mode {
+      background-color: #f3f6f4;
+      color: #16e138;
+    }
+    .night-mode .sunMoonIcon:before {
+      content: "\f186"; /* Kód ikony pro měsíc (Font Awesome) */
+      color: #0000FF; /* Barva ikony měsíce */
+    }
   </style>
 </head>
 <body>
@@ -67,7 +75,7 @@
       <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
     </div>
-<button id="nightModeButton" class="btn btn-light sunMoonIcon nightModeButton" onclick="toggleSunMoonIcon()"></button>
+<button id="nightModeButton" class="btn btn-light sunMoonIcon" onclick="toggleNightMode()"><i class="fas fa-sun"></i></button>
     <div class="tabs">
       <a href="index.html" class="tab">Domů</a>
       <a href="about.html" class="tab">O mně</a>
@@ -135,11 +143,6 @@
       </div>
     </div>
   </div>
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-  <!-- Přidání externího skriptu pro animace log na pozadí -->
-  <script src="https://raw.githubusercontent.com/CaseyCZ/repo/master/script.js"></script>
  <script>
     const nightModeButton = document.getElementById('nightModeButton');
     const body = document.body;
@@ -148,6 +151,11 @@
     function toggleNightMode() {
       isNightMode = !isNightMode;
       body.classList.toggle('night-mode');
+      if (isNightMode) {
+        nightModeButton.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        nightModeButton.innerHTML = '<i class="fas fa-sun"></i>';
+      }
     }
   </script>
 </body>
