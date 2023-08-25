@@ -34,36 +34,52 @@
     .card .card-title {
       color: #764ba2; /* Barva nadpisu karet */
     }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      background-color: #;
+      padding: 10px;
+    }
+    .tab {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+    .tab:hover {
+      background-color: #aaa;
+    }
   </style>
 </head>
 <body>
   <header class="header text-center py-5">
     <div class="container">
       <h1 class="text-white">Lukáš Kysela</h1>
-      <p class="text-white">Vítejte na mé stránce.</p>
-    </div>
+      <p class="text-white">Vítejte na mé stránce</p>
+
+      <a href="https://twitter.com/Searcasey" target="_blank" class="mr-3 social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCTT4ob7-2lkjdQf3yuqrjDw" target="_blank" class="mr-3 social-icon"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.reddit.com/user/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-reddit"></i></a>
+      <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
+</p>
     <div class="tabs">
-  <a href="index.html" class="tab">Domů</a>
-  <a href="about.html" class="tab">O mně</a>
-  <a href="portfolio.html" class="tab">Portfolio</a>
-  <a href="contact.html" class="tab">Kontakt</a>
-</div>
+      <a href="index.html" class="tab">Domů</a>
+      <a href="about.html" class="tab">O mně</a>
+      <a href="portfolio.html" class="tab">Portfolio</a>
+      <a href="contact.html" class="tab">Kontakt</a>
+    </div>
+    
   </header>
-  
+
   <div class="container text-center my-5">
- <p class="mb-0">
-    <a href="https://twitter.com/Searcasey" target="_blank" class="mr-3 social-icon"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.youtube.com/channel/UCTT4ob7-2lkjdQf3yuqrjDw" target="_blank" class="mr-3 social-icon"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.reddit.com/user/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-reddit"></i></a>
-    <a href="https://github.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-github"></i></a>
-    <a href="https://www.facebook.com/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-facebook"></i></a>
-   <a href="https://www.xbox.com/gamertag/CaseyCZ" target="_blank" class="mr-3 social-icon"><i class="fab fa-xbox"></i></a>
-  </p>
-  </div>
-  <div class="container text-center my-5">
-    <h2>Novinky</h3>
+    <h2>Novinky</h2>
     <div class="card-deck">
-   <div class="card">
+      <div class="card">
         <div class="card-header">
           Cocoatop
         </div>
@@ -92,11 +108,11 @@
       </div>
     </div>
   </div>
-      <div class="container text-center my-5">
-    <h2>Featured Packages</h3>
+  
+  <div class="container text-center my-5">
+    <h2>Featured Packages</h2>
     <div class="card-deck">
       <div class="card">
-
         <div class="card-body">
           <h5 class="card-title">Cocoatop1</h5>
           <p class="card-text">GUI Process Viewer for iOS 13+.</p>
@@ -104,7 +120,7 @@
         </div>
       </div>
       <div class="card">
-       <div class="card-body">
+        <div class="card-body">
           <h5 class="card-title">Cocoatop2</h5>
           <p class="card-text">GUI Process Viewer for iOS 13+.</p>
           <a href="depictions/?p=com.CaseyCZ.Cocoatop" class="btn btn-primary">More info</a>
