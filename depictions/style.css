@@ -7,15 +7,16 @@
   top: 0;
   right: 0;
 }
-
 .button-container a,
 .button-container button {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
   transition: color 0.3s;
+  background: none;
+  border: none;
+  padding: 0;
 }
-
 .button-container a:hover,
 .button-container button:hover {
   color: #aaa;
