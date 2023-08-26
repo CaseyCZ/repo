@@ -1,3 +1,24 @@
+/* Styl pro kontejner tlačítek */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Styl pro tlačítka */
+.button-container a,
+.button-container button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.button-container a:hover,
+.button-container button:hover {
+  color: #aaa;
+}
 .fa-sun {
     color: #ff9900; /* Žlutá barva pro ikonu slunce */
  }
