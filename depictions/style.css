@@ -5,12 +5,14 @@
 .night-mode #sunMoonIcon {
   color: red; /* Barva ikony slunce v nočním režimu */
 }
-/* Styl ikony slunce/měsíce */
 .sunMoonIcon {
-  margin-top: 10px;
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
+    background: none; /* Odstraní pozadí tlačítka */
+    border: none; /* Odstraní okraj tlačítka */
+    padding: 0; /* Odstraní vnitřní odsazení tlačítka */
+    font-size: inherit; /* Zachová velikost písma ikony */
+    cursor: pointer; /* Udělá kurzor na ikoně reagujícím na kliknutí */
+    color: #ff9900; /* Zde by měla být vaše barva ikony */
+  }
 
 /* Denní režim */
 body:not(.night-mode) .card {
