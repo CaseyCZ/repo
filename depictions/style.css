@@ -1,12 +1,13 @@
-/* Styl pro kontejner tlačítek */
 .button-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-/* Styl pro tlačítka */
 .button-container a,
 .button-container button {
   margin-left: 20px;
