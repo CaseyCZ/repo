@@ -4,7 +4,7 @@
     <div class="button-container">
     <a href="index.html" class="btn btn-primary">Domů</a>
     <a href="about.html" class="btn btn-primary">O mně</a>
-    <a href="portfolio.html" class="btn btn-primary">Portfolio</a>
+    <a href="portfolio.html" class="btn btn-primary">Produkty</a>
     <a href="contact.html" class="btn btn-primary">Kontakt</a>
     <button id="nightModeButton" class="sunMoonIcon nightModeButton" onclick="toggleNightMode()">
       <i id="sunMoonIcon" class="fas fa-sun"></i>
@@ -77,7 +77,21 @@
     }
     .nightModeButton {
       margin-right: 20px; /* Změňte tuto hodnotu podle vašich potřeb */
-    }
+    }/* Denní režim */
+body:not(.night-mode) {
+  background-color: black;
+  color: white;
+}
+
+/* Barva pozadí pro nadpisy karet v denním režimu */
+body:not(.night-mode) .card-header {
+  background-color: #2f2f2f;
+}
+
+/* Barva pozadí karet v denním režimu */
+body:not(.night-mode) .card {
+  background-color: black;
+}
 </style>
 </head>
 <body>
