@@ -48,17 +48,17 @@
       "type": "image/png"
     },
     {
-      "src": "/icons/apple-icon-72x72.png",
+      "src": "icons/apple-icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/icons/apple-icon-76x76.png",
+      "src": "icons/apple-icon-76x76.png",
       "sizes": "76x76",
       "type": "image/png"
     },
     {
-      "src": "/icons/apple-icon-114x114.png",
+      "src": "icons/apple-icon-114x114.png",
       "sizes": "114x114",
       "type": "image/png"
     },
