@@ -1,9 +1,11 @@
 .fa-sun {
     color: #ff9900; /* Žlutá barva pro ikonu slunce */
-  }
+    background-color: black; /* Bílé pozadí
+ }
 /* Barva ikony v nočním režimu */
 .night-mode #sunMoonIcon {
   color: red; /* Barva ikony slunce v nočním režimu */
+  background-color: black; /* Bílé pozadí
 }
 /* Styl ikony slunce/měsíce */
 .sunMoonIcon {
