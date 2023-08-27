@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none';">
-  <meta name="description" content="Vítejte na mé osobní stránce, kde se můžete dozvědět více o mně, mých zájmech a projektech.">
-     <main> <!-- Hlavní landmark pro tlačítka -->
     <div class="button-container">
     <a href="index.html" class="btn btn-primary">Domů</a>
     <a href="about.html" class="btn btn-primary">O mně</a>
@@ -13,12 +8,16 @@
     <a href="contact.html" class="btn btn-primary">Kontakt</a>
     <div style="text-align: center; margin-top: 0px;">
       <p style="text-align: center; margin: 0;">
-    <a href="#" class="night-mode-button" onclick="toggleNightMode(); return false;">
-        <img width="24" height="24" src="./icons/DarkMode-Light.png" id="toggleDark" alt="Toggle Mode" style="display: inline-block;"/>
-      </a>
+        <a onclick="toggleNightMode();" role="button">
+          <img width="24" height="24" src="./icons/DarkMode-Light.png" id="toggleDark" alt="Toggle Mode" style="display: inline-block;"/>
+        </a>
       </p>
     </div>
     </p></div>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none';">
+ <meta name="description" content="Vítejte na mé osobní stránce, kde se můžete dozvědět více o mně, mých zájmech a projektech.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CaseyCZ</title>
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -114,7 +113,6 @@ body:not(.night-mode) .card {
 </style>
 </head>
 <body>
-      <main> <!-- Hlavní landmark pro tlačítka -->
   <header class="header text-center py-5">
     <div class="container">
       <h1 class="text-white">Lukáš Kysela</h1>
@@ -131,7 +129,7 @@ body:not(.night-mode) .card {
   </header>
   <div class="container text-center my-5">
     <h2>Novinky</h2>
-     <p>Zde naleznete aktuální novinky o mých projektech a aktivitách.</p>
+  <p>Zde naleznete aktuální novinky o mých projektech a aktivitách.</p>
     <div class="card-deck">
       <div class="card">
         <div class="card-header">
@@ -164,7 +162,7 @@ body:not(.night-mode) .card {
   </div>
   <div class="container text-center my-5">
     <h2>Featured Packages</h2>
-     <p>Zde jsou zvýrazněné balíčky a projekty, na kterých pracuji.</p>
+  <p>Zde jsou zvýrazněné balíčky a projekty, na kterých pracuji.</p>
     <div class="card-deck">
       <div class="card">
         <div class="card-body">
@@ -189,13 +187,13 @@ body:not(.night-mode) .card {
       </div>
     </div>
   </div>
-      <main> <!-- Hlavní landmark pro tlačítka -->
- <script>
-    let isNightMode = false;
+<script>
 
+    let isNightMode = false;
     function toggleNightMode() {
       isNightMode = !isNightMode;
-      document.body.classList.toggle('night-mode', isNightMode);
+      document.body.classList.toggle('night-mode');
+
     }
   </script>
 </body>
