@@ -190,21 +190,14 @@ body:not(.night-mode) .card {
     </div>
   </div>
       <main> <!-- Hlavní landmark pro tlačítka -->
-<script>
-    const nightModeButton = document.getElementById('nightModeButton');
-    const sunMoonIcon = document.getElementById('sunMoonIcon');
-    let isNightMode = false;
-    function toggleNightMode() {
-      isNightMode = !isNightMode;
-      document.body.classList.toggle('night-mode');
-      if (isNightMode) {
-        sunMoonIcon.classList.remove('fa-sun');
-        sunMoonIcon.classList.add('fa-moon', 'moon'); // Přidáme třídu moon
-      } else {
-        sunMoonIcon.classList.remove('fa-moon', 'moon'); // Odebereme třídu moon
-        sunMoonIcon.classList.add('fa-sun');
-      }
-    }
-  </script>
+<script<script>
+  const nightModeButton = document.getElementById('nightModeButton');
+  let isNightMode = false;
+  
+  function toggleNightMode() {
+    isNightMode = !isNightMode;
+    document.body.classList.toggle('night-mode');
+  }
+</script>
 </body>
 </html>
