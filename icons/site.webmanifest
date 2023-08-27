@@ -14,7 +14,7 @@
       "type": "image/png"
     },
     {
-      "src": "mstile-150x150.png",
+      "src": "/icons/mstile-150x150.png",
       "sizes": "150x150",
       "type": "image/png"
     }
