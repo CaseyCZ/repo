@@ -23,23 +23,6 @@
 .button-container button:hover {
   color: #aaa;
 }
-.fa-sun {
-    color: #ff9900; /* Žlutá barva pro ikonu slunce */
- }
-/* Barva ikony v nočním režimu */
-.night-mode #sunMoonIcon {
-  color: red; /* Barva ikony slunce v nočním režimu */
-}
-  .sunMoonIcon {
-    background: none; /* Odstraní pozadí tlačítka */
-    border: none; /* Odstraní okraj tlačítka */
-    padding: 0; /* Odstraní vnitřní odsazení tlačítka */
-    font-size: inherit; /* Zachová velikost písma ikony */
-    cursor: pointer; /* Udělá kurzor na ikoně reagujícím na kliknutí */
-    color: #ff9900; /* Zde by měla být vaše barva ikony */
-    outline: none; /* Odstraní oválný rámeček kolem tlačítka */
-  }
-
 /* Denní režim */
 body:not(.night-mode) .card {
   background-color: black; /* Bílé pozadí pro karty pouze v denním režimu */
