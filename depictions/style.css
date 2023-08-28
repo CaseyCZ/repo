@@ -1,134 +1,71 @@
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
+body {
+    margin: 1em;
 }
-
-.button-container a,
-.button-container button {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-}
-
-.button-container a:hover,
-.button-container button:hover {
-  color: #aaa;
-}
-/* Denní režim */
-body:not(.night-mode) .card {
-  background-color: black; /* Bílé pozadí pro karty pouze v denním režimu */
-  color: white; /* Bílá barva textu v nočním režimu */
-  margin: 1em;
-}
-/* Noční režim */
-.night-mode .body {
-  margin: 1em;
-  background-color: white; /* Černé pozadí v nočním režimu */
-  color: black; /* Bílá barva textu v nočním režimu */
-}
-
-/* Zbytek vašeho CSS kódu... */
-.header {
-  background-color: #667eea;
-  color: white;
-}
-.social-icon {
-  color: #ff9900;
-}
- .body
-  margin-bottom: 1em;
+.card {
+    margin-bottom: 1em;
 }
 .thumbnail {
-  margin-bottom: 2em;
+    margin-bottom: 2em;;
 }
 .list-group {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 .disable-hover {
-  pointer-events: none;
+    pointer-events: none;
 }
 .link-item {
-  list-style-type: none;
-  padding: 17px 15px;
-  display: block;
-  color: #4f89bb !important;
-  text-align: left;
+    list-style-type: none;
+    padding: 17px 15px;
+    display: block;
+    color: #4f89bb !important;
+    text-align: left;
 }
 .link-item:hover {
-  border: 1px solid #ddd;
-  background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
 }
-.logo-container {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+
+html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
+    background-color: #fff;
 }
-.logo-container img {
-  width: 100%;
-  height: 100%;
+
+html.can-touch .link-item:active{ /* disable hover effect when input is touch */
+    background-color: #f5f5f5;
 }
-html.can-touch .link-item:hover {
-  /* disable hover effect when input is touch */
-  background-color: #fff;
-}
-html.can-touch .link-item:active {
-  /* disable hover effect when input is touch */
-  background-color: #f5f5f5;
-}
+
 .fa {
-  font-size: 16px;
-  margin-left: 5px;
-  margin-right: 10px;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
 
-/* Barva pozadí pro nadpisy karet v nočním režimu */
 @media (prefers-color-scheme: dark) {
-  .card-header {
-    background-color: #333; /* Barva pozadí pro nadpisy karet v nočním režimu */
-  }}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1f1f1f;
-    color: white;
-  }
-  .card-header {
-    background-color: #2f2f2f;
-  }
-  body:not(.night-mode) .card {
-    background-color: #fff; /* Bílé pozadí pro karty pouze v denním režimu */
-  }
+    body {
+        background-color: #1f1f1f;
+        color: white;
+    }
 
-  /* Styly pro černé pozadí .card-body v nočním režimu */
-  body.night-mode .card-body {
-    background-color: #1f1f1f; /* Černé pozadí pro .card-body v nočním režimu */
+    .card-header {
+        background-color: #2f2f2f;
+    }
+    .card-body {
+        background-color: #1f1f1f;
+    }
+    .jumbotron {
+        background-color: #2f2f2f;
+    }
 
-  }
-  .jumbotron {
-    background-color: #2f2f2f;
-  }
-  .list-group-item {
-    background-color: #1f1f1f;
-    border-color: #2f2f2f;
-  }
-  html.can-touch .link-item:hover {
-    /* disable hover effect when input is touch */
-    background-color: #1f1f1f;
-  }
-  html.can-touch .link-item:active {
-    /* disable hover effect when input is touch */
-    background-color: #1f1f1f;
-  }
+    .list-group-item {
+        background-color: #1f1f1f;
+        border-color:  #2f2f2f;;
+    }
+
+    html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
+        background-color: #1f1f1f;
+    }
+    
+    html.can-touch .link-item:active{ /* disable hover effect when input is touch */
+        background-color: #1f1f1f;
+    }
+
 }
